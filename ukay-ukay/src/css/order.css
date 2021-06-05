@@ -1,0 +1,47 @@
+.order {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em 1em;
+}
+
+.order__info {
+  border-bottom: 1px solid lightgrey;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.order__id {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+.order__id > h2,
+p {
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+.order__id > p {
+  color: var(--secondary);
+}
+
+.order__total {
+  font-size: 1em;
+  padding: 1em;
+  border-top: 1px solid lightgrey;
+  text-align: end;
+}
+
+@media all and (max-width: 550px) {
+  .order__id > p {
+    font-size: 0.4em;
+  }
+}
+@media all and (max-width: 360px) {
+  .order__id {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,36 @@
+.home {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  margin-bottom: 3em;
+}
+.home__banner {
+  width: 100%;
+  height: 50vh;
+  z-index: -1;
+  margin-bottom: -180px;
+  /* mask-image: linear-gradient(to top, transparent 2%, black); */
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.home__row {
+  display: flex;
+  z-index: 1;
+  margin-left: 1em;
+  margin-right: 1em;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5em;
+  grid-auto-flow: dense;
+  z-index: 1;
+  margin-left: 1em;
+  margin-right: 1em; */
+}
+
+@media all and (max-width: 700px) {
+  .home__row {
+    flex-flow: row wrap;
+  }
+}

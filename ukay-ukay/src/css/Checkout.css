@@ -1,0 +1,115 @@
+.checkout {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.checkout__items {
+  background-color: lightgray;
+  padding: 1em;
+}
+.checkout__items > h1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.8em;
+}
+.checkout__items > h1 a {
+  text-decoration: none;
+  color: black;
+}
+.checkout__items > h1 a span {
+  text-decoration: none;
+  color: var(--primary);
+}
+.checkout__items > h1 a span:hover {
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+.checkout__container {
+  display: flex;
+  padding: 0.5em;
+  margin: 0 1.5em;
+  border-bottom: 1px solid lightgray;
+}
+
+.checkout__title {
+  flex: 0.2;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.checkout__addressinfo {
+  display: flex;
+  flex: 0.6;
+  flex-direction: column;
+}
+.checkout__editaddress {
+  flex: 0.2;
+  display: flex;
+  align-items: center;
+}
+.checkout__editaddress > h4 {
+  color: var(--primary);
+}
+.checkout__editaddress > h4:hover {
+  color: var(--secondary);
+  cursor: pointer;
+}
+
+.checkout__iteminfo,
+.checkout__paymentinfo {
+  flex: 0.8;
+}
+
+.checkout__paymentinfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.checkout__paymentinfo > p {
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.checkout__ordertotal {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 40%;
+  border: 1px solid lightgrey;
+  padding: 2em;
+  margin: 1em 0;
+}
+
+.checkout__button {
+  padding: 0.7em 2em;
+  border-radius: 0.2em;
+  outline: none;
+  border: none;
+  background-color: var(--primary);
+  color: #ffffff;
+}
+.checkout__button:hover {
+  background-color: var(--secondary);
+  /* color: #111; */
+}
+@media all and (max-width: 665px) {
+  .checkout__ordertotal {
+    width: 100%;
+  }
+}
+@media all and (max-width: 530px) {
+  .checkout__container {
+    flex-direction: column;
+  }
+}
+@media all and (max-width: 300px) {
+  .checkout__items > h1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1em;
+  }
+}

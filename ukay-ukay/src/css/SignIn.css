@@ -1,0 +1,125 @@
+.signin {
+  background-color: white;
+}
+
+.signin__container {
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+
+  height: max-content;
+  width: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5em;
+  gap: 0.5em;
+}
+
+.signin__logocontainer {
+  /* background-color: red; */
+  margin-top: 0.5em;
+  /* margin-bottom: 0.5em; */
+  height: 6em;
+  width: 7em;
+  text-align: center;
+  object-fit: contain;
+  position: relative;
+}
+.signin__logo {
+  width: 6em;
+  object-fit: contain;
+  /* margin-top: 0.2em; */
+}
+.signin__logocontainer > h1 {
+  position: absolute;
+  top: 3.2em;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 1em;
+  text-align: center;
+  color: #c70874;
+  font-weight: 1000;
+}
+.signin__formcontainer {
+  /* background-color: pink; */
+
+  display: flex;
+  flex-direction: column;
+  border: 1.5px solid lightgrey;
+  border-radius: 0.3em;
+  padding: 1.5em;
+  width: 100%;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+.signin__formcontainer > h1 {
+  font-weight: 500;
+  font-size: 1.7em;
+}
+
+.signin__form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  font-size: 0.8em;
+  font-weight: 700;
+  margin-left: 0.2em;
+  margin-bottom: 0.2em;
+}
+.signin__input {
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+  border-radius: 0.3em;
+  border: 1px solid gray;
+  outline: none;
+}
+
+.signin__input:focus {
+  box-shadow: 0 0 5px#c70874;
+  padding: 0.5em 1em;
+  border: 1px solid #c70874;
+}
+.signin__signinbutton {
+  padding: 0.7em 0.2em;
+  border-radius: 0.2em;
+  outline: none;
+  border: none;
+  background-color: #c70874;
+  color: #ffffff;
+}
+.signin__signinbutton:hover {
+  background-color: #f20c5c;
+}
+
+.signin__conditions {
+  line-height: 1.5em;
+  font-size: 0.7em;
+  font-weight: 500;
+}
+
+.signin__new {
+  line-height: 1.5em;
+  font-size: 0.7em;
+  font-weight: 500;
+  color: gray;
+}
+
+.signin__signupbutton {
+  width: 100%;
+}
+
+.signin__signupbutton button {
+  padding: 0.7em 0.2em;
+  border-radius: 0.2em;
+  outline: none;
+  border: none;
+  background-color: #c70874;
+  color: #ffffff;
+  width: 100%;
+}
+.signin__signupbutton button:hover {
+  background-color: #f20c5c;
+}
